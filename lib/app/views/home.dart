@@ -37,7 +37,7 @@ class HomeView extends StatelessWidget {
                   fit: FlexFit.tight,
                   flex: 2,
                   child: Container(
-                    padding: EdgeInsets.only(left: 0, right: 10, top: 10),
+                    padding: const EdgeInsets.only(left: 0, right: 10, top: 10),
                     child: const Text(
                       'Jobline',
                       style:
@@ -128,7 +128,7 @@ class HomeView extends StatelessWidget {
                 ],
               ),
             ),
-            Container(
+            const SizedBox(
               height: 200,
               child: SearchJobcards(),
             ),
@@ -161,8 +161,8 @@ class HomeView extends StatelessWidget {
                 children: [
                   ListTile(
                     minVerticalPadding: 5,
-                    tileColor:
-                        Color.fromARGB(255, 218, 216, 216).withOpacity(0.2),
+                    tileColor: const Color.fromARGB(255, 218, 216, 216)
+                        .withOpacity(0.2),
                     title: const Text(
                       'Sr. Product Designer',
                       style:
@@ -187,20 +187,20 @@ class HomeView extends StatelessWidget {
                       height: 50,
                       width: 50,
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 255, 134, 174),
+                        color: const Color.fromARGB(255, 255, 134, 174),
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: const Icon(Icons.align_horizontal_center_rounded,
                           color: Colors.white),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   ListTile(
                     minVerticalPadding: 5,
-                    tileColor:
-                        Color.fromARGB(255, 218, 216, 216).withOpacity(0.2),
+                    tileColor: const Color.fromARGB(255, 218, 216, 216)
+                        .withOpacity(0.2),
                     title: const Text(
                       'Digital Designer (NFT)',
                       style:
@@ -225,7 +225,7 @@ class HomeView extends StatelessWidget {
                       height: 50,
                       width: 50,
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 1, 46, 112),
+                        color: const Color.fromARGB(255, 1, 46, 112),
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: const Icon(Icons.align_horizontal_center_rounded,
