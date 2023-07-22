@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      builder: () => const GetMaterialApp(
+      builder: (BuildContext, context) => const GetMaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'My Second Task',
         home: HomeView(),
